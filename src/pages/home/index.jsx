@@ -7,7 +7,7 @@ export function Home() {
   }
 
   return (
-    <div className="h-screen bg-red-700 text-white p-4 flex flex-col items-center space-y-6">
+    <div className="h-full bg-red-700 text-white p-4 flex flex-col items-center space-y-6">
       <header className="container flex justify-center max-w-3xl p-4">
       <img 
         src="../images/logo-fundo-vinho.svg"
