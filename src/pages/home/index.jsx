@@ -20,7 +20,7 @@ export function Home() {
         </div>
         <div className="md:flex-1 flex flex-col space-y-6">
           <h1 className="text-3xl text-center font-bold">
-            Dê o seu palpite na copa do mondo do CATAR 2022!
+            Dê o seu palpite na copa do mundo do CATAR 2022!
           </h1>
           <a href="/signup" className="text-red-700 bg-white text-xl px-8 py-4 rounded-xl">
             Criar minha Conta
