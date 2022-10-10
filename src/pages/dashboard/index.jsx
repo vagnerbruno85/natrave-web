@@ -17,14 +17,14 @@ export const Dashboard = () => {
       url: `/${auth.user.username}`,
     })
 
-    const hunches = res.data.reduce((acc,hunch)=> {
+    const hunches = res.data.hunches.reduce((acc,hunch)=> {
       acc[hunch.gameId] = hunch
       return acc
     }, {})
 
     return hunches
   })
-
+  
   const [games, fetchGames] = useAsyncFn(async (params) => {
     const res = await axios({
       method:'get',
@@ -56,7 +56,7 @@ export const Dashboard = () => {
       <header className="bg-red-500 text-white">
         <div className="container max-w-3xl flex justify-between p-4">
           <img
-            src="../public/images/logo-fundo-vermelho.svg"
+            src="../images/logo-fundo-vermelho.svg"
             className="w-28 md:w-40"
           />
           <a href={`/${auth?.user?.username}`}>
@@ -67,7 +67,7 @@ export const Dashboard = () => {
       <main className="space-y-6">
         <section id="header" className=" bg-red-500 text-white ">
           <div className="container max-w-3xl space-y-2 p-4">
-            <span>Olá Vagner</span>
+            <span>{`Olá ${auth?.user?.name} B`}</span>
             <h3 className="text-2xl font-bold">Qual é o seu palpite?</h3>
           </div>
         </section>

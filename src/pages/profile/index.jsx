@@ -70,7 +70,7 @@ export const Profile = () => {
       <header className="bg-red-500 text-white">
         <div className="container max-w-3xl flex justify-between p-4">
           <img
-            src="../public/images/logo-fundo-vermelho.svg"
+            src="../images/logo-fundo-vermelho.svg"
             className="w-28 md:w-40"
           />
           {auth?.user?.id && (
